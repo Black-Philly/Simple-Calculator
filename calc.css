@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: burlywood;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.outside{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: indigo;
+}
+
+.calculator{
+    border: 1px solid brown;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(177, 117, 117);
+}
+
+#display{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*1fr means arranged in a fraction of 1*/
+    gap: 5px;
+}
+
+.btn, .operator {
+    padding: 20px;
+    color: white;
+    background-color: brown;
+    font-size: 1.5em;
+    font: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    }
+
+.btn:hover{
+    background-color: burlywood;
+    color: brown;
+}
